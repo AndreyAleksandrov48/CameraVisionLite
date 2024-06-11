@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F37C7A12BED0EEB002846B3 /* CameraVisionLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37C7A02BED0EEB002846B3 /* CameraVisionLiteApp.swift */; };
+		1F37C7A32BED0EEB002846B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37C7A22BED0EEB002846B3 /* ContentView.swift */; };
+		1F37C7A52BED0EEC002846B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F37C7A42BED0EEC002846B3 /* Assets.xcassets */; };
+		1F37C7A82BED0EEC002846B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F37C7A72BED0EEC002846B3 /* Preview Assets.xcassets */; };
+		1F37C7B22BED27DB002846B3 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37C7B12BED27DB002846B3 /* RectangleView.swift */; };
+		1F37C7B62BED2B7C002846B3 /* YOLOv3TinyInt8LUT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1F37C7B52BED2B7C002846B3 /* YOLOv3TinyInt8LUT.mlpackage */; };
+		1F386A652BEE4F3C00A60E5C /* yolov8s.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1F386A642BEE4F3C00A60E5C /* yolov8s.mlpackage */; };
+		1F7A89B22C22E1CA00973264 /* VideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A89B12C22E1CA00973264 /* VideoRecorder.swift */; };
+		1FC511612BF3988900EABEB4 /* ModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC511602BF3988900EABEB4 /* ModelContainer.swift */; };
+		1FCD39192C0DE0CB0058D8A5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD39182C0DE0CB0058D8A5 /* SettingsView.swift */; };
+		1FF925BF2C19AB4900B1C820 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FF925BE2C19AB4900B1C820 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F37C79D2BED0EEB002846B3 /* CameraVisionLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraVisionLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F37C7A02BED0EEB002846B3 /* CameraVisionLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVisionLiteApp.swift; sourceTree = "<group>"; };
+		1F37C7A22BED0EEB002846B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F37C7A42BED0EEC002846B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F37C7A72BED0EEC002846B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F37C7A92BED0EEC002846B3 /* CameraVisionLite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CameraVisionLite.entitlements; sourceTree = "<group>"; };
+		1F37C7B12BED27DB002846B3 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		1F37C7B52BED2B7C002846B3 /* YOLOv3TinyInt8LUT.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = YOLOv3TinyInt8LUT.mlpackage; path = ../../../Downloads/YOLOv3TinyInt8LUT.mlpackage; sourceTree = "<group>"; };
+		1F386A642BEE4F3C00A60E5C /* yolov8s.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = yolov8s.mlpackage; path = ../../yolov8s.mlpackage; sourceTree = "<group>"; };
+		1F7A89B12C22E1CA00973264 /* VideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorder.swift; sourceTree = "<group>"; };
+		1FC511602BF3988900EABEB4 /* ModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContainer.swift; sourceTree = "<group>"; };
+		1FCD39182C0DE0CB0058D8A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1FF925BE2C19AB4900B1C820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F37C79A2BED0EEB002846B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F37C7942BED0EEB002846B3 = {
+			isa = PBXGroup;
+			children = (
+				1F37C79F2BED0EEB002846B3 /* CameraVisionLite */,
+				1F37C79E2BED0EEB002846B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F37C79E2BED0EEB002846B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F37C79D2BED0EEB002846B3 /* CameraVisionLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F37C79F2BED0EEB002846B3 /* CameraVisionLite */ = {
+			isa = PBXGroup;
+			children = (
+				1F37C7A02BED0EEB002846B3 /* CameraVisionLiteApp.swift */,
+				1F37C7A22BED0EEB002846B3 /* ContentView.swift */,
+				1F7A89B12C22E1CA00973264 /* VideoRecorder.swift */,
+				1FF925BE2C19AB4900B1C820 /* Info.plist */,
+				1FCD39182C0DE0CB0058D8A5 /* SettingsView.swift */,
+				1FC511602BF3988900EABEB4 /* ModelContainer.swift */,
+				1F386A642BEE4F3C00A60E5C /* yolov8s.mlpackage */,
+				1F37C7B52BED2B7C002846B3 /* YOLOv3TinyInt8LUT.mlpackage */,
+				1F37C7B12BED27DB002846B3 /* RectangleView.swift */,
+				1F37C7A42BED0EEC002846B3 /* Assets.xcassets */,
+				1F37C7A92BED0EEC002846B3 /* CameraVisionLite.entitlements */,
+				1F37C7A62BED0EEC002846B3 /* Preview Content */,
+			);
+			path = CameraVisionLite;
+			sourceTree = "<group>";
+		};
+		1F37C7A62BED0EEC002846B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F37C7A72BED0EEC002846B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F37C79C2BED0EEB002846B3 /* CameraVisionLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F37C7AC2BED0EEC002846B3 /* Build configuration list for PBXNativeTarget "CameraVisionLite" */;
+			buildPhases = (
+				1F37C7992BED0EEB002846B3 /* Sources */,
+				1F37C79A2BED0EEB002846B3 /* Frameworks */,
+				1F37C79B2BED0EEB002846B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraVisionLite;
+			productName = CameraVisionLite;
+			productReference = 1F37C79D2BED0EEB002846B3 /* CameraVisionLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F37C7952BED0EEB002846B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1F37C79C2BED0EEB002846B3 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F37C7982BED0EEB002846B3 /* Build configuration list for PBXProject "CameraVisionLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F37C7942BED0EEB002846B3;
+			productRefGroup = 1F37C79E2BED0EEB002846B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F37C79C2BED0EEB002846B3 /* CameraVisionLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F37C79B2BED0EEB002846B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F37C7A82BED0EEC002846B3 /* Preview Assets.xcassets in Resources */,
+				1F37C7A52BED0EEC002846B3 /* Assets.xcassets in Resources */,
+				1FF925BF2C19AB4900B1C820 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F37C7992BED0EEB002846B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F37C7A32BED0EEB002846B3 /* ContentView.swift in Sources */,
+				1FCD39192C0DE0CB0058D8A5 /* SettingsView.swift in Sources */,
+				1FC511612BF3988900EABEB4 /* ModelContainer.swift in Sources */,
+				1F37C7A12BED0EEB002846B3 /* CameraVisionLiteApp.swift in Sources */,
+				1F37C7B22BED27DB002846B3 /* RectangleView.swift in Sources */,
+				1F37C7B62BED2B7C002846B3 /* YOLOv3TinyInt8LUT.mlpackage in Sources */,
+				1F386A652BEE4F3C00A60E5C /* yolov8s.mlpackage in Sources */,
+				1F7A89B22C22E1CA00973264 /* VideoRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F37C7AA2BED0EEC002846B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F37C7AB2BED0EEC002846B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1F37C7AD2BED0EEC002846B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CameraVisionLite/CameraVisionLite.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CameraVisionLite/Preview Content\"";
+				DEVELOPMENT_TEAM = J4WRY8BYG5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CameraVision Lite";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapps.cameravisionlite.CameraVisionLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F37C7AE2BED0EEC002846B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CameraVisionLite/CameraVisionLite.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CameraVisionLite/Preview Content\"";
+				DEVELOPMENT_TEAM = J4WRY8BYG5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CameraVision Lite";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapps.cameravisionlite.CameraVisionLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F37C7982BED0EEB002846B3 /* Build configuration list for PBXProject "CameraVisionLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F37C7AA2BED0EEC002846B3 /* Debug */,
+				1F37C7AB2BED0EEC002846B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F37C7AC2BED0EEC002846B3 /* Build configuration list for PBXNativeTarget "CameraVisionLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F37C7AD2BED0EEC002846B3 /* Debug */,
+				1F37C7AE2BED0EEC002846B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F37C7952BED0EEB002846B3 /* Project object */;
+}
